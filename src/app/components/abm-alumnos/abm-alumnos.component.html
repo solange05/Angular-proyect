@@ -1,0 +1,19 @@
+<form [formGroup]="alumnoForm" (ngSubmit)="onSubmit()">
+  
+    <mat-form-field appearance="fill">
+      <mat-label>Nombre</mat-label>
+      <input matInput formControlName="nombre" required>
+    </mat-form-field>
+  
+    <mat-form-field appearance="fill">
+      <mat-label>Apellido</mat-label>
+      <input matInput formControlName="apellido" required>
+    </mat-form-field>
+  
+    <mat-form-field appearance="fill">
+      <mat-label>Curso</mat-label>
+      <input matInput formControlName="curso" required>
+    </mat-form-field>
+  
+    <button mat-raised-button color="primary" type="submit">Guardar</button>
+  </form>
