@@ -1,0 +1,27 @@
+<form [formGroup]="alumnoForm" (ngSubmit)="onSubmit()">
+  <mat-form-field appearance="fill">
+    <mat-label>Nombre</mat-label>
+    <input matInput placeholder="Ingrese su nombre" formControlName="nombre" required>
+    <mat-error *ngIf="alumnoForm.get('nombre')?.hasError('required')">El nombre es obligatorio.</mat-error>
+    <mat-error *ngIf="alumnoForm.get('nombre')?.hasError('minlength')">El nombre debe tener al menos 2 caracteres.</mat-error>
+    <mat-error *ngIf="alumnoForm.get('nombre')?.hasError('maxlength')">El nombre no puede exceder los 50 caracteres.</mat-error>
+    <mat-error *ngIf="alumnoForm.get('nombre')?.hasError('pattern')">El nombre solo puede contener letras.</mat-error>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Apellido</mat-label>
+    <input matInput placeholder="Ingrese su apellido" formControlName="apellido" required>
+    <mat-error *ngIf="alumnoForm.get('apellido')?.hasError('required')">El apellido es obligatorio.</mat-error>
+    <mat-error *ngIf="alumnoForm.get('apellido')?.hasError('minlength')">El apellido debe tener al menos 2 caracteres.</mat-error>
+    <mat-error *ngIf="alumnoForm.get('apellido')?.hasError('maxlength')">El apellido no puede exceder los 50 caracteres.</mat-error>
+    <mat-error *ngIf="alumnoForm.get('apellido')?.hasError('pattern')">El apellido solo puede contener letras.</mat-error>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Curso</mat-label>
+    <input matInput placeholder="Ingrese su curso" formControlName="curso" required>
+    <mat-error *ngIf="alumnoForm.get('curso')?.hasError('required')">El curso es obligatorio.</mat-error>
+  </mat-form-field>
+
+  <button mat-raised-button color="primary" type="submit" [disabled]="alumnoForm.invalid">Guardar</button>
+</form>
