@@ -5,7 +5,17 @@
   "projects": {
     "gestion-alumnos": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:component": {
+          "standalone": false
+        },
+        "@schematics/angular:directive": {
+          "standalone": false
+        },
+        "@schematics/angular:pipe": {
+          "standalone": false
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -101,6 +111,6 @@
     }
   },
   "cli": {
-    "analytics": "e09776e6-9801-4277-b9ee-afcfd4ccf287"
+    "analytics": "07eed8b2-4118-495b-a725-fb631bfba12a"
   }
 }

@@ -1,8 +1,7 @@
-// src/app/components/abm-alumnos/abm-alumnos.component.ts
-
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Alumno } from '../../models/alumno.model';
+import { AlumnoService } from '../../services/alumno.service';
 
 @Component({
   selector: 'app-abm-alumnos',
@@ -13,11 +12,11 @@ export class AbmAlumnosComponent implements OnInit {
   
   alumnoForm: FormGroup;
   
-  constructor(private fb: FormBuilder) {
+  constructor(private fb: FormBuilder, private alumnoService: AlumnoService) {
     this.alumnoForm = this.fb.group({
-      nombre: [''],
-      apellido: [''],
-      curso: ['']
+      nombre: ['', [Validators.required, Validators.minLength(2), Validators.maxLength(50), Validators.pattern(/^[a-zA-Z\s]*$/)]],
+      apellido: ['', [Validators.required, Validators.minLength(2), Validators.maxLength(50), Validators.pattern(/^[a-zA-Z\s]*$/)]],
+      curso: ['', [Validators.required]]
     });
   }
 
@@ -30,7 +29,7 @@ export class AbmAlumnosComponent implements OnInit {
     };
     
     console.log('Alumno agregado:', nuevoAlumno);
-    // logica para guardar el nuevo alumno en un service
+    this.alumnoService.addAlumno(nuevoAlumno); // Guardar en el servicio
     
     this.alumnoForm.reset(); // Resetear el formulario después de enviar
   }
