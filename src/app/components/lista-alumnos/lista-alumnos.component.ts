@@ -15,11 +15,13 @@ export class ListaAlumnosComponent implements OnInit {
   constructor(private alumnoService: AlumnoService) {}
 
   ngOnInit(): void {
-    this.alumnos = this.alumnoService.getAlumnos(); // Obtener la lista de alumnos
+    // Suscribirse al observable para obtener la lista de alumnos
+    this.alumnoService.getAlumnos().subscribe(data => {
+      this.alumnos = data; // Actualizar la lista de alumnos
+    });
   }
 
   deleteAlumno(id: number) {
     this.alumnoService.deleteAlumno(id); // Eliminar el alumno del servicio
-    this.alumnos = this.alumnoService.getAlumnos(); // Actualizar la lista
   }
 }
