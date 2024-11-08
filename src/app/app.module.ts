@@ -1,5 +1,3 @@
-// src/app/app.module.ts
-
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -11,12 +9,16 @@ import { ListaAlumnosComponent } from './components/lista-alumnos/lista-alumnos.
 import { AbmAlumnosComponent } from './components/abm-alumnos/abm-alumnos.component';
 import { NombreCompletoPipe } from './nombre-completo.pipe'; // Pipe
 
-// Importa los módulos de Angular Material que necesitas
+
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatTableModule } from '@angular/material/table'; // Importa el módulo necesario
+import { MatTableModule } from '@angular/material/table'; 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ListaClasesComponent } from './components/lista-clases/lista-clases.component';
+import { AbmClasesComponent } from './components/abm-clases/abm-clases.component';
+import { ListaCursosComponent } from './components/lista-cursos/lista-cursos.component';
+import { AbmCursosComponent } from './components/abm-cursos/abm-cursos.component';
 
 @NgModule({
   declarations: [
@@ -25,18 +27,22 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ToolbarComponent,
     ListaAlumnosComponent,
     AbmAlumnosComponent,
-    NombreCompletoPipe // Pipe
+    NombreCompletoPipe,
+    ListaClasesComponent,
+    AbmClasesComponent,
+    ListaCursosComponent,
+    AbmCursosComponent // Pipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    MatFormFieldModule, // Importa el módulo necesario
-    MatInputModule,     // Importa el módulo necesario
-    MatToolbarModule,   // Importa el módulo necesario
-    MatTableModule,     // Importa el módulo necesario para mat-table
-    BrowserAnimationsModule // Requerido para animaciones de Angular Material
+    MatFormFieldModule, 
+    MatInputModule,     
+    MatToolbarModule,   
+    MatTableModule,     
+    BrowserAnimationsModule 
   ],
   providers: [],
   bootstrap: [AppComponent]

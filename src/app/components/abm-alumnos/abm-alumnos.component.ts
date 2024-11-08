@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { Alumno } from '../../models/alumno.model';
+import { Alumno } from '../../core/models/alumno.model';
 import { AlumnoService } from '../../services/alumno.service';
 
 @Component({

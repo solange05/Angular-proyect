@@ -1,17 +1,62 @@
 @import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html, body { 
+    height: 100%; 
+}
 
+body { 
+    margin: 0; 
+    font-family: Roboto, "Helvetica Neue", sans-serif; 
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.nav-item a {
+    color: #007bff;
+    transition: color 0.3s;
+}
+
+.nav-item a:hover {
+    color: #0056b3;
+}
+
+.nav-item a.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
 
 .sidenav-container {
     height: 100%;
-  }
-  
-  mat-sidenav {
-    width: 250px; /* Ancho del menu lateral */
-  }
-  
-  mat-sidenav-content {
+}
+
+mat-sidenav {
+    width: 250px; /* Ancho del menú lateral */
+}
+
+mat-sidenav-content {
     padding: 16px; /* Espaciado alrededor del contenido */
-  }
+    background-color: #f8f9fa;
+    min-height: calc(100% - 56px); /* Ajustar altura según el navbar */
+    padding: 20px;
+    border-radius: 5px;
+}
+
+table.mat-table {
+    width: 100%; 
+    margin-top: 20px;
+}
+
+th.mat-header-cell {
+    background-color: #007bff;
+    color: white;
+}
+
+td.mat-cell {
+    padding: 10px;
+}
