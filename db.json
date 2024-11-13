@@ -1,0 +1,83 @@
+{
+  "alumnos": [
+    {
+      "id": "4d22",
+      "firstName": "Sol",
+      "lastName": "Paniagua",
+      "email": "sol@mail.com",
+      "password": "123456",
+      "role": "ADMIN",
+      "token": "ndsHSBnsdjkasJs354MSjsnmvcs332SJnxjS",
+      "createdAt": "2024-10-24T00:14:33.140Z"
+    },
+    {
+      "id": "Fr24",
+      "firstName": "Facundo",
+      "lastName": "Carrizo",
+      "email": "facu@mail.com",
+      "createdAt": "2024-10-24T01:28:09.184Z",
+      "role": "USER",
+      "password": "LHxfNUFt",
+      "token": "FKejj6VrYmRw2EtEuecO"
+    },
+    {
+      "id": "8HpO",
+      "firstName": "Cheese",
+      "lastName": "Cake",
+      "email": "cake@mail.com",
+      "createdAt": "2024-11-12T00:23:04.107Z",
+      "role": "USER",
+      "password": "a4z3fyxq",
+      "token": "CdaxV576aqjF9lJnBftr"
+    }
+  ],
+  "clases": [
+    {
+      "id": "avcE2",
+      "name": "Matemáticas",
+      "Cantidad de Alumnos": 32
+    },
+    {
+      "id": "nvhE2",
+      "name": "Computación",
+      "Cantidad de Alumnos": 40
+    },
+    {
+      "id": "akcE5",
+      "name": "Ciencias Sociales",
+      "Cantidad de Alumnos": 14
+    },
+    {
+      "id": "bndF6",
+      "name": "Ciencias Naturales",
+      "Cantidad de Alumnos": 28
+    }
+  ],
+  "inscripciones": [
+    {
+      "id": "nvcE3",
+      "alumnoId": "Fr24",   
+      "claseId": "avcE2"    
+    },
+    {
+      "id": "5981",
+      "claseId":  "avcE2", 
+      "alumnoId":"Fr24"
+    },
+    {
+      "id":"1d4c", 
+      "claseId":"avcdE32", 
+      "alumnoId":"4d22"
+    },
+    {
+      "id":"bfd2", 
+      "claseId":"avcE2", 
+      "alumnoId":"Fr24"
+    },
+    {
+      "id":"014d", 
+      "claseId":"nvhE2", 
+      "alumnoId":"4d22"
+    }
+  ]
+}
