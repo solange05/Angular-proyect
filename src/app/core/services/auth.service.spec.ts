@@ -5,7 +5,7 @@ import {
   HttpTestingController,
 } from '@angular/common/http/testing';
 import { AuthData } from '../../features/auth/models';
-import { Alumno } from '../../features/dashboard/alumnos/models'; // Cambiado de 'users' a 'alumnos'
+import { Alumno } from '../../features/dashboard/alumnos/models';
 import { MockProvider } from 'ng-mocks';
 import { NavigationExtras, Router } from '@angular/router';
 
@@ -17,6 +17,7 @@ const mockAlumno: Alumno = {
   password: '123456',
   createdAt: new Date(),
   token: 'FJDSFNSDvmfSKDdmsddaamds',
+  role: ''
 };
 const mockAuthData: AuthData = {
   email: 'mockuser@mail.com',
@@ -60,7 +61,7 @@ fdescribe('AuthService', () => {
       },
     });
     const mockReq = httpController.expectOne({
-      url: `${service['baseURL']}/alumnos?email=${mockAuthData.email}&password=${mockAuthData.password}`, // Cambiado de 'users' a 'alumnos'
+      url: `${service['baseURL']}/alumnos?email=${mockAuthData.email}&password=${mockAuthData.password}`,
       method: 'GET',
     });
     mockReq.flush([mockAlumno]);
@@ -76,7 +77,7 @@ fdescribe('AuthService', () => {
     });
 
     const mockReq = httpController.expectOne({
-      url: `${service['baseURL']}/alumnos?email=${mockAuthData.email}&password=${mockAuthData.password}`, // Cambiado de 'users' a 'alumnos'
+      url: `${service['baseURL']}/alumnos?email=${mockAuthData.email}&password=${mockAuthData.password}`,
       method: 'GET',
     });
     mockReq.flush([]);
@@ -87,7 +88,7 @@ fdescribe('AuthService', () => {
 
     service.login(mockAuthData).subscribe();
     const mockReq = httpController.expectOne({
-      url: `${service['baseURL']}/alumnos?email=${mockAuthData.email}&password=${mockAuthData.password}`, // Cambiado de 'users' a 'alumnos'
+      url: `${service['baseURL']}/alumnos?email=${mockAuthData.email}&password=${mockAuthData.password}`,
       method: 'GET',
     });
     mockReq.flush([mockAlumno]);

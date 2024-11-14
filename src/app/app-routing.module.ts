@@ -24,6 +24,10 @@ const routes: Routes = [
     path: '**',
     redirectTo: 'auth',
   },
+  {
+    path: 'cursos',
+    loadChildren: () => import('./features/dashboard/cursos/cursos.module').then(m => m.CursosModule)
+  },
 ];
 
 @NgModule({
