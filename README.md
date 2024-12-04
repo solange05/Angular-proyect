@@ -23,12 +23,14 @@ La aplicación permite gestionar cursos y alumnos, proporcionando funcionalidade
 
 2. **Ejecuta el Servidor de JSON**:
    Ejecuta
-   'json-server --watch database/db.json'
+   - 'json-server --watch database/db.json'
+
     en la terminal para cargar la Base de Datos para login y entidades.
 
    - USUARIO ADMINISTRADOR
    - correo: admin@mail.com
    - contraseña: 123456
+
 
    - USUARIO NORMAL
    - correo: user@mail.com
