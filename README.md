@@ -22,16 +22,17 @@ La aplicación permite gestionar cursos y alumnos, proporcionando funcionalidade
    Ejecuta 'npm install'
 
 2. **Ejecuta el Servidor de JSON**:
-   Ejecuta 'json-server --watch database/db.json' en la terminal
-   para cargar la Base de Datos para login y entidades.
+   Ejecuta
+   'json-server --watch database/db.json'
+    en la terminal para cargar la Base de Datos para login y entidades.
 
-    USUARIO ADMINISTRADOR
-    correo: admin@mail.com
-    contraseña: 123456
+   - USUARIO ADMINISTRADOR
+   - correo: admin@mail.com
+   - contraseña: 123456
 
-    USUARIO NORMAL
-    correo: user@mail.com
-    contraseña: 123456
+   - USUARIO NORMAL
+   - correo: user@mail.com
+   - contraseña: 123456
 
 ## Creditos
 Author: Solange Paniagua
