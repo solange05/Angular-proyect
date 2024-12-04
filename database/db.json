@@ -1,0 +1,167 @@
+{
+  "users": [
+    {
+      "name": "Solange",
+      "lastName": "Paniagua",
+      "email": "admin@mail.com",
+      "phone": "1144556677",
+      "address": "Argentina",
+      "role": "Administrador",
+      "password": "123456",
+      "token": "67674d30-96b8-323d-0823-ce6d4c4f7931",
+      "id": "1"
+    },
+    {
+      "name": "Mauro",
+      "lastName": "Lombardo",
+      "email": "user@mail.com",
+      "phone": "1234567890",
+      "address": "Buenos Aires, Argentina",
+      "role": "Usuario",
+      "password": "123456",
+      "token": "af789503-d06e-6370-970a-e07dcf48fdc6",
+      "id": "2"
+    }
+  ],
+  "students": [
+    {
+      "name": "Charly",
+      "lastName": "Seminare",
+      "email": "purorock@mail.com",
+      "phone": "1133442255",
+      "birthDate": "2000-02-15",
+      "gender": "M",
+      "id": "1"
+    },
+    {
+      "name": "Andrea",
+      "lastName": "Montenegro",
+      "email": "andremon@hotmail.com",
+      "phone": "1175904988",
+      "birthDate": "2001-01-03",
+      "gender": "F",
+      "id": "2"
+    },
+    {
+      "name": "Matias Jose",
+      "lastName": "Carmander",
+      "email": "carmander@mail.com",
+      "phone": "1155667898",
+      "birthDate": "1999-02-15",
+      "gender": "M",
+      "id": "3"
+    },
+    {
+      "name": "Rocio Natalia",
+      "lastName": "Larrageta",
+      "email": "rocigeta@mail.com",
+      "phone": "1144668899",
+      "birthDate": "1977-06-02",
+      "gender": "F",
+      "id": "4"
+    },
+    {
+      "name": "Lucas ",
+      "lastName": "Aranda",
+      "email": "luquitas@mail.com",
+      "phone": "1166770044",
+      "birthDate": "2000-03-03",
+      "gender": "M",
+      "id": "5"
+    }
+  ],
+  "courses": [
+    {
+      "name": "Java",
+      "startDate": "2024-05-15T03:00:00.000Z",
+      "endDate": "2024-07-15T03:00:00.000Z",
+      "time": "14:00 - 16:00",
+      "teacher": "Ezequiel Garcia",
+      "id": "1"
+    },
+    {
+      "name": "C#",
+      "startDate": "2024-07-03T03:00:00.000Z",
+      "endDate": "2024-09-03T03:00:00.000Z",
+      "time": "10:00 - 12:00",
+      "teacher": "Anabella Taraglas",
+      "id": "2"
+    },
+    {
+      "name": "HTML",
+      "startDate": "2024-09-25T03:00:00.000Z",
+      "endDate": "2024-11-25T03:00:00.000Z",
+      "time": "12:00 - 14:00",
+      "teacher": "Miguel Torres",
+      "id": "3"
+    },
+    {
+      "name": "Angular",
+      "startDate": "2024-06-01T03:00:00.000Z",
+      "endDate": "2024-08-01T03:00:00.000Z",
+      "time": "8:00 - 10:00",
+      "teacher": "Alicia Carpenter",
+      "id": "4"
+    },
+    {
+      "name": "PHP",
+      "startDate": "2024-05-22T03:00:00.000Z",
+      "endDate": "2024-05-24T03:00:00.000Z",
+      "time": "14:00 - 16:00",
+      "teacher": "Javier pasallo",
+      "id": "5"
+    },
+    {
+      "name": "Javascript",
+      "startDate": "2024-05-01T03:00:00.000Z",
+      "endDate": "2024-05-30T03:00:00.000Z",
+      "time": "10:00 - 12:00",
+      "teacher": "Julio Gonzalez",
+      "id": "6"
+    }
+  ],
+  "enrollments": [
+    {
+      "courseId": "4",
+      "studentId": "3",
+      "date": "2024-03-27",
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "courseId": 1,
+      "studentId": 5,
+      "date": "2024-02-03"
+    },
+    {
+      "id": "3",
+      "courseId": 3,
+      "studentId": 3,
+      "date": "2024-01-15"
+    },
+    {
+      "id": "4",
+      "courseId": 4,
+      "studentId": 1,
+      "date": "2024-11-19"
+    },
+    {
+      "id": "6",
+      "courseId": 1,
+      "studentId": 3,
+      "date": "2024-02-25"
+    },
+    {
+      "id": "7",
+      "courseId": 2,
+      "studentId": 4,
+      "date": "2024-03-28"
+    },
+    {
+      "id": "65af",
+      "courseId": "1",
+      "studentId": "1",
+      "date": "2024-12-04T02:17:56.092Z"
+    }
+  ]
+}

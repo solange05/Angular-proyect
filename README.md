@@ -1,28 +1,37 @@
-# Solange05 / Angular - Project
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.3.
+# Administrador de Cursos y Alumnos
 
-## Development server
+Este proyecto es una aplicación de gestión de cursos y alumnos desarrollada en Angular. Utiliza JSON Server para simular un backend RESTful, lo que permite realizar operaciones CRUD sobre una base de datos ficticia.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Descripción
 
-## Code scaffolding
+La aplicación permite gestionar cursos y alumnos, proporcionando funcionalidades para crear, leer, actualizar y eliminar registros.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+![Angular Project Demo](Assets/ABM-Demo.gif)
 
-## Build
+## Tecnologías Utilizadas
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Angular
+- TypeScript
+- HTML/CSS
+- JSON Server
+- Angular Material
 
-## Running unit tests
+## Ejecucion del Proyecto
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. **Instala Dependencias**:
+   Ejecuta 'npm install'
 
-## Running end-to-end tests
+2. **Ejecuta el Servidor de JSON**:
+   Ejecuta 'json-server --watch database/db.json' en la terminal
+   para cargar la Base de Datos para login y entidades.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+    USUARIO ADMINISTRADOR
+    correo: admin@mail.com
+    contraseña: 123456
 
-## Further help
+    USUARIO NORMAL
+    correo: user@mail.com
+    contraseña: 123456
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
-
-# Solange05
+## Creditos
+Author: Solange Paniagua
