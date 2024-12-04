@@ -6,7 +6,7 @@ Este proyecto es una aplicación de gestión de cursos y alumnos desarrollada en
 
 La aplicación permite gestionar cursos y alumnos, proporcionando funcionalidades para crear, leer, actualizar y eliminar registros.
 
-![Angular Project Demo](Assets/ABM-Demo.gif)
+![Angular Project Demo](src/Assets/ABM-Demo.gif)
 
 ## Tecnologías Utilizadas
 
