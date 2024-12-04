@@ -1,0 +1,28 @@
+<app-toolbar [InputSideNav]="sidenav"></app-toolbar>
+<mat-sidenav-container class="menu-container">
+    <mat-sidenav #sidenav class="menu-sidenav" mode="side" [opened]="true">
+    <div id="admin-sidebar">
+        <mat-nav-list>
+          <ng-container *ngFor="let item of navItems" >
+            <a
+            [routerLink]="item.path" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:false}"
+              mat-list-item
+              *ngIf="(verifyRole(item) | async)"
+            >
+              <mat-icon *ngIf="item.icon" class="menuIcons">{{ item.icon }}</mat-icon>  {{ item.title }}
+            </a>
+          </ng-container>
+          <mat-divider></mat-divider>
+          <div class="col-12 mt-3 text-center">
+            <button mat-stroked-button (click)="logout()">
+              <mat-icon>logout</mat-icon> Cerrar sesión
+            </button>
+          </div>
+        </mat-nav-list>
+  </div> 
+    </mat-sidenav>
+    <div class="menu-sidenav-content">
+        <router-outlet></router-outlet>
+          </div>
+        
+  </mat-sidenav-container>
