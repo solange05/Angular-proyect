@@ -1,0 +1,11 @@
+<mat-toolbar color="warn">
+    <button type="button" (click)="InputSideNav.toggle()" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>Mi Sistema  |  {{activateRoute | activatedRoute}}</span>
+    <span class="example-spacer"></span>
+    <span>{{ (authUser$ | async)?.email }} </span>
+    <button mat-icon-button aria-label="Configuración" matTooltip="Configuración">
+      <mat-icon>settings</mat-icon>
+    </button>
+  </mat-toolbar>
