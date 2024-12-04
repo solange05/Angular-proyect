@@ -12,6 +12,7 @@ La aplicación permite gestionar cursos y alumnos, proporcionando funcionalidade
 
 - Angular
 - TypeScript
+- Boostrap
 - HTML/CSS
 - JSON Server
 - Angular Material
